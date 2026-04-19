@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tagrip"
+version = "0.1.0"
+description = "Smart tag & keyword extractor for Markdown files. Extract, curate, and apply tags to YAML frontmatter."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "izag8216" }]
+keywords = ["markdown", "tags", "keywords", "frontmatter", "cli", "obsidian", "vault", "tf-idf", "rake"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+    "pyyaml>=6.0",
+    "scikit-learn>=1.3",
+    "rake-nltk>=1.0",
+    "nltk>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.1",
+]
+
+[project.scripts]
+tagrip = "tagrip.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=tagrip --cov-report=term-missing"
