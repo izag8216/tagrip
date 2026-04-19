@@ -1,4 +1,4 @@
-[![header](https://capsule-render.vercel.app/api?section=header&type=venom&color=0:2D5A27,50:1B6B3A,100:3A6B8C&fontColor=FFFFFF&height=240&fontSize=52&fontAlignY=42&desc=Smart+Tag+%26+Keyword+Extractor+for+Markdown&descSize=17&descAlignY=62&descAlign=center)](https://github.com/izag8216/tagrip)
+[![header](https://capsule-render.vercel.app/api?section=header&type=venom&color=0:2D5A27,50:1B6B3A,100:3A6B8C&fontColor=FFFFFF&height=240&fontSize=52&fontAlignY=42&text=tagrip&desc=Smart+Tag+%26+Keyword+Extractor+for+Markdown&descSize=17&descAlignY=62&descAlign=center)](https://github.com/izag8216/tagrip)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
